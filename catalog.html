@@ -28,7 +28,7 @@
                     <li class="header-search">
                         <a class="header-search-link" href="search.html">Поиск</a>
                         <div class="modal modal-search">
-                            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                                 <label class="visually-hidden" for="search-field">Форма поиска</label>
                                 <input type="search" name="search" id="search-field" placeholder="Что ищем?">
                             </form>
@@ -100,7 +100,7 @@
 
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+                <form class="filter" action="https://echo.htmlacademy.ru" method="get">
                     <fieldset>
                         <legend>Сортировка:</legend>
                         <label class="visually-hidden" for="filter-sorting">Сортировка:</label>
@@ -123,57 +123,57 @@
 
                     <fieldset>
                         <legend>Жирность:</legend>
-                            <ul class="filter-field">
-                                <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content-group" value="0" id="filter-fat-free">
-                                    <label for="filter-fat-free">0%</label>
-                                </li>
+                        <ul class="filter-field">
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content-group" value="0" id="filter-fat-free">
+                                <label for="filter-fat-free">0%</label>
+                            </li>
 
-                                <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content-group" value="less-10" id="filter-fat-less-10" checked>
-                                    <label for="filter-fat-less-10">до 10%</label>
-                                </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content-group" value="less-10" id="filter-fat-less-10" checked>
+                                <label for="filter-fat-less-10">до 10%</label>
+                            </li>
 
-                                <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content-group" value="less-30" id="filter-fat-less-30">
-                                    <label for="filter-fat-less-30">до 30%</label>
-                                </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content-group" value="less-30" id="filter-fat-less-30">
+                                <label for="filter-fat-less-30">до 30%</label>
+                            </li>
 
-                                <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content-group" value="more-30" id="filter-fat-more-30">
-                                    <label for="filter-fat-more-30">выше 30%</label>
-                                </li>
-                            </ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content-group" value="more-30" id="filter-fat-more-30">
+                                <label for="filter-fat-more-30">выше 30%</label>
+                            </li>
+                        </ul>
                     </fieldset>
 
                     <fieldset>
                         <legend>Наполнители:</legend>
                         <ul class="filter-field">
-                                <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" checked>
-                                    <label for="filter-chocolate">шоколадные</label>
-                                </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                                <label for="filter-chocolate">шоколадные</label>
+                            </li>
 
-                                <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
-                                    <label for="filter-chocolate">сахарные присыпки</label>
-                                </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
+                                <label for="filter-chocolate">сахарные присыпки</label>
+                            </li>
 
-                                <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruit" id="filter-fruit">
-                                    <label for="filter-chocolate">фрукты</label>
-                                </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruit" id="filter-fruit">
+                                <label for="filter-chocolate">фрукты</label>
+                            </li>
 
-                                <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sirup" id="filter-sirup">
-                                    <label for="filter-chocolate">сиропы</label>
-                                </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sirup" id="filter-sirup">
+                                <label for="filter-chocolate">сиропы</label>
+                            </li>
 
-                                <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jams" id="filter-jams">
-                                    <label for="filter-chocolate">джемы</label>
-                                </li>
-                            </ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jams" id="filter-jams">
+                                <label for="filter-chocolate">джемы</label>
+                            </li>
+                        </ul>
                     </fieldset>
 
                     <button type="submit" class="filter-button btn">Применить</button>
@@ -367,10 +367,18 @@
             <section class="footer-social">
                 <h2 class="visually-hidden">Ссылки на сообщества в социальных сетях</h2>
                 <ul class="social-links">
-                    <li><a class="social-btn" href="https://twitter.com/gllacyshop" title="Наш Твиттер">Твиттер</a></li>
-                    <li><a class="social-btn" href="https://www.instagram.com/gllacyshop" title="Наш Инстаграм">Инстаграм</a></li>
-                    <li><a class="social-btn" href="https://www.facebook.com/gllacyshop" title="Наш Фейсбук">Фейсбук</a></li>
-                    <li><a class="social-btn" href="https://vk.com/gllacyshop" title="Наш ВКонтакте">ВКонтакте</a></li>
+                    <li>
+                        <a class="social-btn" href="https://twitter.com/gllacyshop" title="Наш Твиттер">Твиттер</a>
+                    </li>
+                    <li>
+                        <a class="social-btn" href="https://www.instagram.com/gllacyshop" title="Наш Инстаграм">Инстаграм</a>
+                    </li>
+                    <li>
+                        <a class="social-btn" href="https://www.facebook.com/gllacyshop" title="Наш Фейсбук">Фейсбук</a>
+                    </li>
+                    <li>
+                        <a class="social-btn" href="https://vk.com/gllacyshop" title="Наш ВКонтакте">ВКонтакте</a>
+                    </li>
                 </ul>
             </section>
 

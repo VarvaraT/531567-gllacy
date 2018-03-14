@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
@@ -14,7 +17,7 @@
                     <li>
                         <a href="#">Каталог</a>
                         <ul class="sub-menu">
-                            <li><a href="news.html">Новинки</a></li>
+                            <li class="sub-menu-special"><a href="news.html">Новинки</a></li>
                             <li><a href="catalog.html">Сливочное</a></li>
                             <li><a href="sherbet.html">Щербеты</a></li>
                             <li><a href="fruit-ice.html">Фруктовый лед</a></li>
@@ -73,17 +76,18 @@
                 <h2 class="visually-hidden">Слайдер переключения фонов</h2>
                 <div class="first-slide">
                     <b>Крем-брюле и пломбир с малиновым джемом</b>
+                    <a class="btn main-button" href="catalog-item-1.html">Давайте оба!</a>
                 </div>
 
                 <div class="second-slide">
                     <b>Шоколадный пломбир и лимонный сорбет</b>
+                    <a class="btn main-button" href="catalog-item-2.html">Давайте оба!</a>
                 </div>
 
                 <div class="third-slide">
                     <b>Пломбир с помадкой и клубничный щербет</b>
+                    <a class="btn main-button" href="catalog-item-3.html">Давайте оба!</a>
                 </div>
-
-                <a class="btn main-button" href="cart.html">Давайте оба!</a>
 
                 <div class="controls">
                     <a class="control-button control-button-current" href="#" aria-label="Слайд 1">1</a>
@@ -94,13 +98,13 @@
 
             <section class="sales">
                 <h2 class="visually-hidden">Специальные предложения</h2>
-                    <article class="sales-item">
+                    <article class="sales-item sales-raspberry">
                         <h3>Малинка даром!</h3>
                         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                         <a class="btn" href="cart.html">Хочу варенье!</a>
                     </article>
 
-                    <article class="sales-item">
+                    <article class="sales-item sales-chocolate">
                         <h3>Шоколадки даром!</h3>
                         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
                         <a class="btn" href="cart.html">Хочу шоколадки!</a>
@@ -115,7 +119,7 @@
                             <img src="img/product-1.jpg" width="199" height="199" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                         </figure>
                         <p class="catalog-item-price">
-                            <b>310 &#8399;</b>
+                            <b>310 <span class="visually-hidden"><span class="visually-hidden"><span class="visually-hidden"><span class="visually-hidden">&#8399;</span></span></span></span></b>
                             <span>/кг</span>
                         </p>
                         <h3>
@@ -129,7 +133,7 @@
                             <img src="img/product-2.jpg" width="199" height="199" alt="Сливочно-кофейное с кусочками шоколада">
                         </figure>
                         <p class="catalog-item-price">
-                            <b>380 &#8399;</b>
+                            <b>380 <span class="visually-hidden"><span class="visually-hidden">&#8399;</span></span></b>
                             <span>/кг</span>
                         </p>
                         <h3>
@@ -143,7 +147,7 @@
                             <img src="img/product-3.jpg" width="199" height="199" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                         </figure>
                         <p class="catalog-item-price">
-                            <b>355 &#8399;</b>
+                            <b>355 <span class="visually-hidden"><span class="visually-hidden">&#8399;</span></span></b>
                             <span>/кг</span>
                         </p>
                         <h3>
@@ -157,7 +161,7 @@
                             <img src="img/product-4.jpg" width="199" height="199" alt="Сливочное крем-брюле с карамельной подливкой">
                         </figure>
                         <p class="catalog-item-price">
-                            <b>415 &#8399;</b>
+                            <b>415 <span class="visually-hidden"><span class="visually-hidden">&#8399;</span></span></b>
                             <span>/кг</span>
                         </p>
                         <h3>
@@ -192,13 +196,15 @@
             </article>
 
             <section class="subscribe">
-                <h2 class="visually-hidden">Форма подписки</h2>
-                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-                    <label class="visually-hidden subscribe-form-field" for="subscribtion-email">Электронная почта</label>
-                    <input type="email" id="subscribtion-email" name="email" placeholder="Электронная почта">
-                    <button class="btn" type="submit">Отправить</button>
-                </form>
+                <div class="subscribe-form-baground">
+                    <h2 class="visually-hidden">Форма подписки</h2>
+                    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                    <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+                        <label class="visually-hidden subscribe-form-field" for="subscribtion-email">Электронная почта</label>
+                        <input type="email" id="subscribtion-email" name="email" placeholder="Электронная почта">
+                        <button class="btn" type="submit">Отправить</button>
+                    </form>
+                </div>
             </section>
 
             <section class="map">
@@ -210,7 +216,7 @@
                             <h3>Адрес главного офиса и офлайн-магазина:</h3>
                             <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
                          </li>
-                        <li>
+                        <li class="phone">
                             <h3>Для заказов по телефону:</h3>
                             <b>8 812 450-25-25</b>
                             <p>(с 10 до 20 ежедневно)</p>
@@ -243,7 +249,7 @@
             <section class="footer-menu">
                 <h2 class="visually-hidden">Дополнительное меню сайта</h2>
                 <ul class="footer-menu-list">
-                    <li>
+                    <li class="footer-menu-special">
                         <a href="suppliers.html">Для поставщиков</a>
                     </li>
                     <li>
@@ -280,9 +286,7 @@
                 </p>
                 <p>
                     <label class="visually-hidden" for="feedback-message"></label>
-                    <textarea name="message" id="feedback-message" rows="5">
-                        Напишите что-нибудь...
-                    </textarea>
+                    <textarea name="message" id="feedback-message" rows="5" placeholder="Напишите что-нибудь..."></textarea>
                 </p>
                 <button class="btn" type="submit">Отправить</button>
             </form>

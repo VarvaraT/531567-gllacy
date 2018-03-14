@@ -1,0 +1,615 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #ffffff;
+
+    background-color: #849d8f;
+    background-image: url("../img/background-1.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font: inherit;
+    font-weight: bold;
+
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+    vertical-align: middle;
+
+    background-color: #f06341;
+    background-image: linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    border: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background-image: linear-gradient(90deg, rgb(244, 133, 105) 0%, rgb(237, 112, 94) 100%);
+}
+
+.btn:active {
+    background-image: linear-gradient(90deg, rgb(216, 72, 51) 0%, rgb(2324, 96, 62) 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container h1 {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700;
+}
+
+/* Навигация */
+
+.site-navigation,
+.user-navigation,
+.sub-menu {
+    list-style: none;
+}
+
+.site-navigation {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.sub-menu,
+.user-navigation {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: #ffffff;
+}
+
+.site-navigation a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+ }
+
+ .user-navigation a {
+    background-color: #9db1a5;
+ }
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus,
+.user-navigation a:active {
+    color: #333333;
+    background-color: #f7f6f3;
+}
+
+.site-navigation a:active {
+    color: #333333;
+    background-color: #ededed;
+    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105);
+}
+
+.navigation-current {
+    background-color: #d07058;
+}
+
+.sub-menu {
+    background-color: #f7f6f3;
+    border: 1px solid rgba(194, 206, 199, 0.52);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.sub-menu a {
+    color: #323232;
+    font-weight: 400;
+}
+
+.sub-menu a:hover,
+.sub-menu a:focus {
+    background-color: #fbded7;
+}
+
+.sub-menu a:active {
+    background-color: #f6b5a5;
+}
+
+.sub-menu-special a {
+    font-weight: 700;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+}
+
+.sub-menu .navigation-current a {
+    color: #ffffff;
+}
+
+/* Модальные окна */
+
+.modal {
+    color: #323232;
+    background-color: #f8f7f4;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.modal input,
+.subscribe-form input {
+    border: 1px solid rgba(178, 178, 178, 0.52);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #323232;
+}
+
+::-webkit-input-placeholder {
+   color: #999999;
+   font-weight: 400;
+}
+
+::-moz-placeholder {
+   color: #999999;
+   font-weight: 400;
+}
+
+.modal input:hover,
+.subscribe-form input:hover {
+    border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.modal input:focus,
+.subscribe-form input:focus {
+    border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.modal .user-help a {
+    font-size: 13px;
+    line-height: 24px;
+    color: #323232;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.3);
+    background-color: #f8f7f4;
+}
+
+.modal .user-help a:hover,
+.modal .user-help a:focus,
+.modal .user-help a:active {
+    color: #e84d37;
+    border-bottom-color: rgba(232, 77, 55, 0.3);
+}
+
+.modal-login .btn,
+.modal-cart .btn {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.header-cart-full a {
+    color: #323232;
+    background-color: #f7f6f3;
+}
+
+.modal-cart-list {
+    border-bottom: 1px solid #cacac7;
+}
+
+.modal-cart-item td {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.modal-cart-item td span {
+    color: #999999;
+}
+
+.modal-cart .cart-price {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+/* Контакты в шапке сайта */
+
+.header-contacts .working-time {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+.header-contacts .phone-number {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+/* Слайдер */
+
+.main-slider b {
+    font-size: 60px;
+    line-height: 60.35px;
+}
+
+.main-slider .btn {
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.main-slider .controls a {
+    color: #ffffff;
+}
+
+/* Блок Акции */
+
+.sales-raspberry {
+    background-color: #670e21;
+    background-image: url("../img/raspberry-bg3.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.sales-chocolate {
+    background-color: #503225;
+    background-image: url("../img/shoko-bg3.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.sales h3 {
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.sales p {
+    font-size: 18px;
+}
+
+.sales a {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* Каталог товаров */
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-list h3 a {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.catalog-list h3 a:hover,
+.catalog-list h3 a:focus,
+.catalog-list h3 a:active {
+    color: #ffbc9e;
+    border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.catalog-item-price {
+    text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.catalog-item-price b {
+    font-size: 45px;
+}
+
+.catalog-item-price span {
+    font-size: 30px;
+}
+
+.catalog-item .btn {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* Блок Преимущества */
+
+.features {
+    color: #323232;
+    font-weight: 400;
+
+    background-color: #eddfc2;
+    background-image: url("../img/wafer-bg.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.features h1 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.features-list {
+    list-style: none;
+}
+
+/* Блок Новости */
+
+.news {
+    color: #323232;
+
+    background-color: #ffffff;
+    background-image: url("../img/strawberry-bg.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.news h2 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.news h3 a {
+    color: #323232;
+    text-decoration: underline;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.news h3 a:hover,
+.news h3 a:focus,
+.news h3 a:active {
+    color: #e84d37;
+}
+
+/* Форма Подписки */
+
+.subscribe {
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+
+    background-image: url("../img/mail-bg.png");
+}
+
+.subscribe-form-baground {
+    background-color: #f8f7f4;
+}
+
+/* Блок Карта проезда */
+
+.map .contacts {
+    color: #323232;
+    background-color: #fefefe;
+}
+
+.map .address-and-phone {
+    list-style: none;
+}
+
+.map .address-and-phone h3 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.map .address b {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.map .phone b {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.map .phone p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.map .btn {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* Хлебные крошки */
+
+.breadcrumbs {
+    list-style: none;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.breadcrumbs a {
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrunms a:active {
+    color: #ffbc9e;
+    border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.breadcrumb-current {
+    border: none;
+}
+
+/* Фильтры и сортировка */
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.filter-field {
+    background-color: #a9bab0;
+    list-style: none;
+}
+
+.filter-field label {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.filter-field select {
+    background-color: #a9bab0;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.filter-field select:hover {
+    color: #323232;
+}
+
+.filter-field select:focus {
+    color: #323232;
+    background-color: #ffffff;
+}
+
+.filter-button {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    background-color: #a9bab0;
+    border: 2px solid #ffffff;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    color: #323232;
+    background-color: #fbfcfb;
+    border: none;
+}
+
+.filter-button:active {
+    color: #323232;
+    background-color: #eaeaea;
+    border: none;
+    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105);
+}
+
+/* Пагинация */
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item a {
+    color: #ffffff;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+    background-color: #9db1a5;
+}
+
+.pagination-item a:active,
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus {
+    color: #323232;
+    background-color: #ffffff;
+}
+
+/* Футер: социальные кнопки, меню, копирайт */
+
+.social-links,
+.footer-menu-list {
+    list-style: none;
+}
+
+.social-btn {
+    color: #ffffff;
+}
+
+.footer-menu-list a {
+    color: #ffffff;
+
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-menu-list a:hover,
+.footer-menu-list a:focus,
+.footer-menu-list a:active {
+    color: #ffbc9e;
+    border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.footer-menu-special a {
+    font-weight: 700;
+}
+
+.footer-copyright p {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.footer-copyright p a {
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-copyright p a:hover,
+.footer-copyright p a:focus,
+.footer-copyright p a:active {
+    color: #ffbc9e;
+    border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+/* Форма обратной связи */
+
+.modal-feedback h2 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.modal-feedback input,
+.modal-feedback textarea {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.modal-feedback textarea {
+    color: #323232;
+    font-weight: 700;
+}

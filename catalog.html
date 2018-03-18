@@ -7,8 +7,8 @@
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
-        <header class="main-header">
+    <body class="inner-page">
+        <header class="main-header container">
             <nav class="main-navigation">
                 <a class="main-logo" href="index.html">
                     <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
@@ -29,7 +29,7 @@
                 </ul>
                 <ul class="user-navigation">
                     <li class="header-search">
-                        <a class="header-search-link" href="search.html">Поиск</a>
+                        <a class="modal-title" href="search.html">Поиск</a>
                         <div class="modal modal-search">
                             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                                 <label class="visually-hidden" for="search-field">Форма поиска</label>
@@ -39,7 +39,7 @@
                     </li>
 
                     <li class="header-login">
-                        <a class="header-login" href="login.html">Вход</a>
+                        <a class="modal-title" href="login.html">Вход</a>
                         <div class="modal modal-login">
                             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                                 <p>
@@ -60,7 +60,7 @@
                     </li>
 
                     <li class="header-cart header-cart-full">
-                        <a class="header-cart-link" href="cart.html" aria-label="Корзина">2 товара</a>
+                        <a class="modal-title" href="cart.html" aria-label="Корзина">2 товара</a>
                         <div class="modal modal-cart">
                             <table class="modal-cart-list">
                                 <tr class="modal-cart-item">
@@ -86,7 +86,7 @@
             </nav>
 
             <p class="header-contacts">
-                <span class="working-time">С 10 до 20, ежедневно</span>
+                <span class="working-time">С 10 до 20, ежедневно</span><br>
                 <span class="phone-number">8 812 450-25-25</span>
             </p>
         </header>
@@ -104,7 +104,7 @@
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-                    <fieldset>
+                    <fieldset class="filter-popular">
                         <legend>Сортировка:</legend>
                         <label class="visually-hidden" for="filter-sorting">Сортировка:</label>
                         <div class="filter-field">
@@ -117,14 +117,14 @@
                         </div>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset class="filter-price">
                         <legend>Цена: 100 руб. – 500 руб.</legend>
                         <div class="filter-field">
                             <input type="range" name="price" id="filter-price" min="100" max="500" step="10" value="400">
                         </div>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset class="filter-fat">
                         <legend>Жирность:</legend>
                         <ul class="filter-field">
                             <li class="filter-option">
@@ -149,7 +149,7 @@
                         </ul>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset class="filter-fillers">
                         <legend>Наполнители:</legend>
                         <ul class="filter-field">
                             <li class="filter-option">
@@ -366,7 +366,7 @@
             </section>
         </main>
 
-        <footer>
+        <footer class="main-footer container">
             <section class="footer-social">
                 <h2 class="visually-hidden">Ссылки на сообщества в социальных сетях</h2>
                 <ul class="social-links">

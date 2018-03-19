@@ -431,6 +431,12 @@ a.modal-title:focus  {
     text-align: center;
 }
 
+.catalog-item:hover {
+    border-radius: 5px;
+    background-color: rgba(248, 247, 244, 0.2);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
 .catalog-item-image img {
     border-radius: 50%;
 }
@@ -450,8 +456,23 @@ a.modal-title:focus  {
     font-size: 30px;
 }
 
+.catalog-item .price-hidden {
+    display: inline-block;
+    padding-top: 10px;
+    width: 31px;
+    height: 36px;
+    font-size: 0;
+    background-image: url("../img/ruble.svg");
+    background-position: 0 0px;
+    background-repeat: no-repeat;
+}
+
 .catalog-item .btn {
     display: none;
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px;
 
     font-size: 18px;
     line-height: 24px;
@@ -553,8 +574,8 @@ a.modal-title:focus  {
     line-height: 30px;
     font-weight: 700;
 
-    text-decoration: underline;
     color: #323232;
+    border-bottom: 2px solid #323232;
 }
 
 .news h3 a:hover,
@@ -616,34 +637,58 @@ a.modal-title:focus  {
 }
 
 .map .contacts {
+    width: 252px;
+    padding: 30px 25px;
+
     color: #323232;
     background-color: #fefefe;
+    border-radius: 15px;
 }
 
-.map .address-and-phone {
-    list-style: none;
+.contacts p {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
 }
 
-.map .address-and-phone h3 {
+.contacts span {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
 }
 
-.map .address b {
+.contacts .address span {
+    display: block;
+    width: 150px;
+    margin-bottom: 7px;
+}
+
+.contacts .address b {
+    display: block;
+    width: 250px;
+
     font-size: 18px;
     line-height: 24px;
 }
 
-.map .phone b {
+.contacts .phone span {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.contacts .phone b {
+    margin-bottom: 10px;
     font-size: 18px;
     line-height: 22px;
 }
 
-.map .phone p {
+.contacts .phone i {
+    display: block;
+
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
+    font-style: normal;
 }
 
 .map .btn {

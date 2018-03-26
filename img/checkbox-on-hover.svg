@@ -27,12 +27,5 @@
                                                                                                     
                            
 <?xpacket end="w"?></metadata>
-<defs>
-    <style>
-      .cls-1 {
-        opacity: 0.8;
-      }
-    </style>
-  </defs>
-  <image id="checkbox-on" class="cls-1" width="24" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAQAAAA9vDUIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiAxgOGRzAys3UAAABP0lEQVQoz43Tv0tcQRTF8c97uhjw/QF2VhYiyBLsAqZMG9jSQrCOkCKEDQEDguAKYoJmbUTsFQPbbJ0tjRALSW0TSCUGYqEsToo36v5gn3unOXfme7jDHCYJE1Y9V1y/LGnnMgl7yi5cFuC3an6rajhHOA2NkASFqxTWwmn4HmaDFP+EwguV1LzCuF0TqaeqpGY+6i/+jD6BP1PzIup1R3ROSLzswz9HPOR4pyFRtWm5B58Dd1Zy/NGQ+qiCRR8kILPzgH/SNNZtCK6jqqhKZL4qg7YVTfMW8uPRB8OWtsVoGTFlJuLvtczasN9tgG2i5XXcyXEmH7nuHLbVO7ob77R637k3h3133kT8rR/9wfQnfWBnMN4/Ibf8deEnwxr4ZmClyGJUgyvD7f2EM2WHhR8oNY2TvEmG+qJX6o5z+R8DMGSgivSUxgAAAABJRU5ErkJggg=="/>
+<image id="checkbox-on" width="24" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAQAAAA9vDUIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiAxgOHAXZ1pFRAAABGklEQVQoz42TvUoDURBGv7uugjb7BnkJq0AeQSJptbESJC+gYmEjbmO9whap9AEClgYhNsHGStJZi1jY+BNIToq9d93frHOrmT2HGe7OFS0eaIon1lFyfN2oo6neVB+/6muhaw00kQS8Ypxfcza4BT5pIwHPjfjQjvZFq1n4w6Hf3GGLuxQ/QnnBsFvCRxZeJHhWMERAWInP2XdVJ3jE9mNk7yxgnMM384LhKp01whAwsdmMPUSX0+JIIkyVOIN3EW1mnJeFrJLFxQE4wcstwbHOMtm3ehoW98Qv5Bea69LiOxqVF8srVUKd1OPlDonyoanG1avrV1bj+l33JAUyWh2BpB/X4VEdvax8QGvalnRvs3890XcO3b9aAsAst/WtliPMAAAAAElFTkSuQmCC"/>
 </svg>

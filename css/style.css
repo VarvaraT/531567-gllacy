@@ -327,7 +327,6 @@ input[type="radio"].visually-hidden {
 
 .sub-menu li {
     margin: 0px;
-    margin-bottom: -1px;
     padding: 0px;
     padding: 8px 20px;
 }
@@ -372,7 +371,7 @@ input[type="radio"].visually-hidden {
 
 .sub-menu .sub-menu-special {
     padding: 9px 20px 11px;
-    margin-bottom: 4px;
+    margin-bottom: 1px;
 }
 
 .sub-menu .sub-menu-special a {
@@ -592,7 +591,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal .user-help {
-    min-width: 130px;
+    width: 130px;
 
     margin: 0px;
     margin-left: 17px;
@@ -668,6 +667,7 @@ input[type="radio"].visually-hidden {
 .modal-cart-list {
     margin-bottom: 15px;
     border-bottom: 1px solid #cacac7;
+    border-spacing: 15px 0px;
 }
 
 .modal-cart-list tr {
@@ -754,7 +754,7 @@ input[type="radio"].visually-hidden {
     font-size: 13px;
     line-height: 16px;
     font-weight: 400;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 
@@ -1805,8 +1805,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter legend {
-    margin-top: 2px;
-    margin-bottom: 6px;
+    padding-top: 4px;
+    margin-bottom: 4px;
     padding-left: 16px;
 
     font-size: 14px;
@@ -1838,6 +1838,7 @@ input[type="radio"].visually-hidden {
 
 .filter-field select {
     min-width: 194px;
+    min-height: 36px;
     padding: 7px 14px;
     border-radius: 25px;
     background-color: #a9bab0;
@@ -1992,7 +1993,6 @@ input[type="radio"].visually-hidden {
 
 /* ----------Футер: социальные кнопки, меню, копирайт---------- */
 .main-footer {
-    min-height: 104px;
     margin-top: 12px;
     display: -webkit-box;
     display: -ms-flexbox;

@@ -491,10 +491,10 @@ input[type="radio"].visually-hidden {
     background-color: #f7f6f3;
 }
 
-.header-search:hover .modal-title a,
-.header-search:focus .modal-title a,
-.header-login:hover .modal-title a,
-.header-login:focus .modal-title a {
+.header-search:hover .modal-title-link,
+.header-search:focus .modal-title-link,
+.header-login:hover .modal-title-link,
+.header-login:focus .modal-title-link {
     color: #333333;
 }
 
@@ -600,7 +600,7 @@ input[type="radio"].visually-hidden {
     padding: 0px;
 }
 
-.modal .user-help a {
+.modal .user-help-link {
     display: inline-block;
     height: 15px;
     margin-bottom: 7px;
@@ -613,9 +613,9 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px solid rgba(50, 50, 50, 0.3);
 }
 
-.modal .user-help a:hover,
-.modal .user-help a:focus,
-.modal .user-help a:active {
+.modal .user-help-link:hover,
+.modal .user-help-link:focus,
+.modal .user-help-link:active {
     color: #e84d37;
     border-bottom-color: rgba(232, 77, 55, 0.3);
 }
@@ -789,7 +789,7 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/product-3-small.jpg");
 }
 
-.modal-cart-item td span {
+.modal-cart-item span {
     color: #999999;
 }
 
@@ -1462,12 +1462,12 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
 }
 
-.contacts .address span {
+.contacts-address span {
     display: block;
     width: 150px;
 }
 
-.contacts .address b {
+.contacts-address b {
     display: block;
     width: 250px;
 
@@ -1475,22 +1475,22 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
 }
 
-.contacts .phone {
+.contacts .contacts-phone {
     margin-bottom: 29px;
 }
 
-.contacts .phone span {
+.contacts-phone span {
     display: block;
     margin-bottom: 4px;
 }
 
-.contacts .phone b {
+.contacts-phone b {
     margin-bottom: 10px;
     font-size: 18px;
     line-height: 22px;
 }
 
-.contacts .phone i {
+.contacts-phone i {
     display: block;
 
     font-size: 14px;
@@ -1653,6 +1653,12 @@ input[type="radio"].visually-hidden {
     box-shadow: 0px 2px 1px 0px rgba(0, 1, 1, 0.2);
 
     cursor: pointer;
+}
+
+.range-toggle:hover {
+    top: -9px;
+    width: 6px;
+    height: 6px;
 }
 
 .range-toggle-min {
@@ -2134,7 +2140,7 @@ input[type="radio"].visually-hidden {
     width: 190px;
 }
 
-.footer-copyright p {
+.footer-copyrigt-text {
     margin: 0px;
     padding: 0px;
     font-size: 12px;
@@ -2142,14 +2148,14 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
 }
 
-.footer-copyright p a {
+.footer-copyrigt-text a {
     color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer-copyright p a:hover,
-.footer-copyright p a:focus,
-.footer-copyright p a:active {
+.footer-copyrigt-text a:hover,
+.footer-copyrigt-text a:focus,
+.footer-copyrigt-text a:active {
     color: #ffbc9e;
     border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
@@ -2297,7 +2303,7 @@ input[type="radio"].visually-hidden {
     width: 428px;
     height: 402px;
     margin: auto;
-    padding: 15px 25px 25px 24px;
+    padding: 16px 25px 24px 24px;
     border-radius: 10px;
     z-index: 6;
 }
@@ -2324,8 +2330,12 @@ input[type="radio"].visually-hidden {
 
 .modal-feedback p {
     margin: 0px;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
     padding: 0px;
+}
+
+.modal-feedback p:last-of-type {
+    margin-bottom: 20px;
 }
 
 .modal-feedback input,
@@ -2336,19 +2346,20 @@ input[type="radio"].visually-hidden {
 
 .modal-feedback input {
     width: 251px;
-    min-height: 41px;
+    min-height: 39px;
 }
 
 .modal-feedback input:hover,
 .modal-feedback input:focus {
     width: 249px;
-    min-height: 39px;
+    min-height: 37px;
 }
 
 .modal-feedback textarea {
     width: 411px;
     padding-left: 15px;
-    min-height: 155px;
+    padding-top: 8px;
+    min-height: 144px;
     resize: none;
 
     font: inherit;
@@ -2363,7 +2374,7 @@ input[type="radio"].visually-hidden {
 
 .modal-feedback textarea:hover,
 .modal-feedback textarea:focus {
-    min-height: 154px;
+    min-height: 143px;
     padding-left: 14px;
     margin-top: -1px;
     border: 2px solid rgba(154, 154, 154, 0.52);
@@ -2378,6 +2389,11 @@ input[type="radio"].visually-hidden {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 351px;
 }
 
 .modal-feedback .btn {
@@ -2385,6 +2401,7 @@ input[type="radio"].visually-hidden {
     align-self: flex-end;
 
     margin-left: auto;
+    padding: 10px 22px 10px 25px;
 
     font-size: 18px;
     line-height: 24px;

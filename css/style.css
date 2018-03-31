@@ -312,6 +312,7 @@ input[type="radio"].visually-hidden {
     left: -6px;
 
     min-height: 169px;
+    min-width: 141px;
     margin: 0px;
     padding: 0px;
 
@@ -327,6 +328,7 @@ input[type="radio"].visually-hidden {
 
 .sub-menu li {
     margin: 0px;
+    margin: 0 -1px;
     padding: 0px;
     padding: 8px 20px;
 }
@@ -1994,6 +1996,7 @@ input[type="radio"].visually-hidden {
 /* ----------Футер: социальные кнопки, меню, копирайт---------- */
 .main-footer {
     margin-top: 12px;
+    padding-bottom: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
